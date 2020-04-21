@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html  lang="en">
+
+<!-- Mirrored from vk.com/dev by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Apr 2020 13:57:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=windows-1251" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="shortcut icon" href="images/icons/favicons/fav_logo1679.ico?6" />
+
+<link rel="apple-touch-icon" href="images/icons/pwa/apple/defaultc9f0.png?8">
+
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<meta name="description" content="VK is the largest European social network with more than 100 million active users. Our goal is to keep old friends, ex-classmates, neighbors and colleagues in touch." />
+
+
+<title>Developers | VK</title>
+
+<noscript><meta http-equiv="refresh" content="0; URL=badbrowser.html"></noscript>
+
+<link rel="stylesheet" type="text/css" href="css/al/commonc80f.css?66577870638" /><link rel="stylesheet" type="text/css" href="css/al/basec4ca.css?1" /><link rel="stylesheet" type="text/css" href="css/al/fonts_utfc4ca.css?1" /><link rel="stylesheet" type="text/css" href="css/al/fonts_cntddcb.css?7802460376" />
+
+<script type="text/javascript">
+(function() {
+var alertCont;
+function trackOldBrowserEvent(event) {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET.html', 'https://vk.com/badbrowser_stat.php?act=track&amp;event=' + event);
+  xhr.send();
+}
+function exposeGlobals() {
+  window.hideOldBrowser = function() {
+    alertCont.remove();
+    var date = new Date();
+    date.setTime(date.getTime() + (7 * 24 * 60 * 60 * 1000));
+    var expiresDate = date.toGMTString();
+    var domain = window.locDomain;
+    document.cookie = 'remixoldbshown=1; expires=' + expiresDate + '; path=/' + (domain ? '; domain=.' + domain : '') + ';secure';
+    trackOldBrowserEvent('hideAlert_atom');
+  }
+}
+function checkOldBrowser() {
+  if(!document.body) {
+    setTimeout(checkOldBrowser, 100);
+    return;
+  }
+  try {
+    if (!('noModule' in HTMLScriptElement.prototype)) {
+      exposeGlobals();
+      var alert = '<div class="OldBrowser__container OldBrowser__container--atom" style="width:960px;">  Your browser is out of date For speed and stability when using VK, try <a href="https://vk.com/away.php?to=https%3A%2F%2F1l-go.mail.ru%2Fr%2Fadid%2F3010899_2013344%2Fpid%2F102819%2Fpof%2F1%2Ff%2F3%2F%3F_1larg_sub%3D505002%26utm_source%3Dvk%26rfr%3D505002%20&badbrowser=atom&badbrowser_meta=atom_without_player_badbrowser_alert&" target="_blank">Atom</a>. <a href="https://vk.com/away.php?to=https%3A%2F%2F1l-go.mail.ru%2Fr%2Fadid%2F3010899_2013344%2Fpid%2F102819%2Fpof%2F1%2Ff%2F3%2F%3F_1larg_sub%3D505002%26utm_source%3Dvk%26rfr%3D505002%20&badbrowser=atom&badbrowser_meta=atom_without_player_badbrowser_alert&" target="_blank">More</a>  <span class="OldBrowser__close" aria-label="Close" role="button" onclick="hideOldBrowser();"></span></div>';
+      alertCont = document.createElement('div');
+      alertCont.className = 'OldBrowser';
+      alertCont.id = 'old_browser_wrap';
+      alertCont.innerHTML = alert;
+      document.body.appendChild(alertCont);
+      trackOldBrowserEvent('showAlert_atom');
+    }
+  } catch(e) {}
+}
+checkOldBrowser();
+})();
+var vk = {
+  ads_rotate_interval: 120000,
+  al: parseInt('4') || 4,
+  id: 0,
+  intnat: '1' ? true : false,
+  host: 'vk.com',
+  loginDomain: 'https://login.vk.com/',
+  lang: 3,
+  statsMeta: {"platform":"web2","st":false,"time":1587391021,"hash":"A4HahqWTbzhcNzNZnekpVbzFMRtNutHhHOVCuFsd4Pk"},
+  loaderNavSection: '',
+  rtl: parseInt('') || 0,
+  version: 1651521,
+  stDomains: 0,
+  stDomain: '',
+  wsTransport: 'https://stats.vk-portal.net',
+  stExcludedMasks: ["loader_nav","lang"],
+  zero: false,
+  contlen: 17326,
+  loginscheme: 'https',
+  ip_h: 'f3e524a9c338c1f2dd',
+  navPrefix: '/',
+  dt: parseInt('0') || 0,
+  fs: parseInt('13') || 13,
+  ts: 1587391021,
+  tz: 10800,
+  pd: 0,
+  css_dir: '',
+  vcost: 7,
+  time: [2020, 4, 20, 16, 57, 1],
+  sampleUser: -1, spentLastSendTS: new Date().getTime(),
+  a11y: 0,
+  statusExportHash: '',
+  audioAdsConfig: {"_":"_"},
+  longViewTestGroup: "every_view",
+  cma: 1,
+  lpConfig: {
+    enabled: 0,
+    key: '',
+    ts: 0,
+    url: '',
+    lpstat: 0
+  },
+
+  pr_tpl: "<div class=\"pr %cls%\" id=\"%id%\"><div class=\"pr_bt\"><\/div><div class=\"pr_bt\"><\/div><div class=\"pr_bt\"><\/div><\/div>",
+  push_hash: '773350a7cb558daad3',
+
+  audioInlinePlayerTpl: "<div class=\"audio_inline_player _audio_inline_player no_select\">\n  <div class=\"audio_inline_player_right\">\n    <div class=\"audio_inline_player_volume\"><\/div>\n  <\/div>\n  <div class=\"audio_inline_player_left\">\n    <div class=\"audio_inline_player_progress\"><\/div>\n  <\/div>\n<\/div>",
+
+  tnsPixelType: 'unauth',
+  tnsPixelSocdem: '13',
+
+  pe: {"article_poll":1,"vk_apps_svg_qr":1,"upload.send_upload_stat":1,"push_notifier":1,"audio_search_new_catalog":1,"story_reactions_web":1,"notify_new_events_box":1,"web_ajax_json_object":1,"mini_apps_web_add_to_favorites":1,"cookie_secure_default_true":1,"mvk_new_info_snackbar":1,"market_with_products_of_groups":1,"apps_promo_share_story":1,"widgets_xdm_same_origin":1,"stickers_money_transfer_suggestions":1,"web2_story_box_enabled":1,"gifts_stickers_preview_tooltips":1,"performance_box_opening":1,"easy_market_promote_new_payment":1,"navigation_timespent":1,"mvk_mediascope_counter":1,"market_item_recommendations_view_log":1,"market_item_others_view_log":1,"web_stats_transport_story_view":1},
+  countryISO: 'CA',
+};;vk.rv="24088";;if (!window.constants) { window.constants = {Groups: {
+  GROUPS_ADMIN_LEVEL_USER: 0,
+  GROUPS_ADMIN_LEVEL_MODERATOR: 1,
+  GROUPS_ADMIN_LEVEL_EDITOR: 2,
+  GROUPS_ADMIN_LEVEL_ADMINISTRATOR: 3,
+  GROUPS_ADMIN_LEVEL_HOST: 4,
+  GROUPS_ADMIN_LEVEL_EVENT_CREATOR: 5,
+  GROUPS_ADMIN_LEVEL_CREATOR: 6,
+  GROUPS_ADMIN_PSEUDO_LEVEL_ADVERTISER: 100
+}}; };
+
+window.locDomain = vk.host.match(/[a-zA-Z]+\.[a-zA-Z]+\.?$/)[0];
+var _ua = navigator.userAgent.toLowerCase();
+if (/opera/i.test(_ua) || !/msie 6/i.test(_ua) || document.domain != locDomain) document.domain = locDomain;
+var ___htest = (location.toString().match(/#(.*)/) || {})[1] || '', ___to;
+___htest = ___htest.split('#').pop();
+if (vk.al != 1 && ___htest.length && ___htest.substr(0, 1) == vk.navPrefix) {
+  if (vk.al != 3 || vk.navPrefix != '!') {
+    ___to = ___htest.replace(/^(\/|!)/, '');
+    if (___to.match(/^([^\?]*\.php|login|mobile|away)([^a-z0-9\.]|$)/)) ___to = '';
+    location.replace(location.protocol + '//' + location.host + '/' + ___to);
+  }
+}
+
+var StaticFiles = {
+  'cmodules/web/common_web.js' : {v: '167'},
+  'common.css':{v:66577870638},'base.css':{v:1},'fonts_utf.css':{v:1},'fonts_cnt.css':{v:7802460376}
+  ,'cmodules/bundles/audioplayer.2f2a9e9e1033b710cdfc.js':{v:'cd5c9af25207f6870c7c'},'cmodules/bundles/common.b4f0b5149370f45d6bc4.js':{v:'1745f27d4d863d4d7c4d'},'cmodules/web/common_web.6969ffacf4e3402bf177.js':{v:'41a81fd0a05f119e81520d2b7e16becb'},'lang3_0.js': {v: 26456517},'dev.css':{v:42446538365},'dev.js':{v:383024408},'cmodules/web/wk.e760fe5da04ea91d036b.js':{v:'1bf7e8661eaec90826c83b22a1c01dbc'},'cmodules/web/wk.js':{v:15},'wk.css':{v:28631706979},'cmodules/web/wk_editor.7ac779332f1f61ff6c3f.js':{v:'503a2e296d8a42078950647837457d7a'},'cmodules/web/wk_editor.js':{v:73},'wk_editor.css':{v:28326709151},'ui_controls.js':{v:3874811298},'ui_controls.css':{v:19196595404},'cmodules/web/jobs_devtools_notification.4df10ae32f805993d431.js':{v:'d49c6c2f1edadd7f58fc443a53597c6a'},'cmodules/web/jobs_devtools_notification.js':{v:1},'cmodules/web/page_layout.74b6a1e8a066891ffa6a.js':{v:'a79fa6f5402f462d974f'},'cmodules/web/page_layout.js':{v:1},'cmodules/bundles/40078178da81a2a294c33d2feddcc76c.bc8473a712e22f821a5d.js':{v:'93299476685236438c18'},'cmodules/bundles/2bddcf8eba73bbb0902e1b2f9d33962b.398943f516a729749eb0.js':{v:'a346646ed8db83f74021'},'cmodules/web/ui_common.c651bb427c7f566d4b04.js':{v:'7d8603dda26eb5b7b3d6f0302b83c540'},'ui_common.js':{v:6},'ui_common.css':{v:18981215481},'cmodules/bundles/f8a3b0b69a90b5305d627c89f0bd674e.0ddcf139530f9eca6bfb.js':{v:'55d06b92f78d1803b139'},'cmodules/web/likes.e06fa24ccc77d308d77a.js':{v:'6c7adaa3514b1e8e2d88b756ef0dd6a2'},'cmodules/web/likes.js':{v:1},'cmodules/web/grip.4e3739b310753afb9593.js':{v:'77cc88636dab4d4ab43fe764d6c1db18'},'cmodules/web/grip.js':{v:1}
+}
+var abp;
+</script>
+
+<link type="text/css" rel="stylesheet" href="https://vk.com/css/al/dev.css?42446538365" /><link type="text/css" rel="stylesheet" href="https://vk.com/css/al/wk.css?28631706979" /><link type="text/css" rel="stylesheet" href="https://vk.com/css/al/wk_editor.css?28326709151" /><link type="text/css" rel="stylesheet" href="https://vk.com/css/ui_controls.css?19196595404" /><link type="text/css" rel="stylesheet" href="css/al/ui_common8585.css?18981215481" /><script type="text/javascript" src="js/loader_nav1651521_3.js"></script><script type="text/javascript" src="js/cmodules/bundles/audioplayer.2f2a9e9e1033b710cdfcb667.js?cd5c9af25207f6870c7c"></script><script type="text/javascript" src="js/cmodules/bundles/common.b4f0b5149370f45d6bc449a6.js?1745f27d4d863d4d7c4d"></script><script type="text/javascript" src="js/cmodules/web/common_web.6969ffacf4e3402bf177b6b4.js?41a81fd0a05f119e81520d2b7e16becb"></script><script type="text/javascript" src="https://vk.com/js/lang3_0.js?26456517"></script><script type="text/javascript" src="js/lib/pxf60c.js?ch=1"></script><script type="text/javascript" src="js/lib/px8a10.js?ch=2"></script><meta name="msApplication-ID" content="C6965DD5.VK" /><meta name="msApplication-PackageFamilyName" content="C6965DD5.VK_v422avzh127ra" /><meta name="google-site-verification" content="CNjLCRpSR2sryzCC4NQKKCL5WnvmBTaag2J_UlTyYeQ" /><meta name="yandex-verification" content="798f8402854bea07" /><script type="text/javascript" src="https://vk.com/js/al/dev.js?383024408"></script><script type="text/javascript" src="https://vk.com/js/cmodules/web/wk.e760fe5da04ea91d036b.js?1bf7e8661eaec90826c83b22a1c01dbc"></script><script type="text/javascript" src="https://vk.com/js/cmodules/web/wk_editor.7ac779332f1f61ff6c3f.js?503a2e296d8a42078950647837457d7a"></script><script type="text/javascript" src="https://vk.com/js/lib/ui_controls.js?3874811298"></script><script type="text/javascript" src="js/cmodules/web/jobs_devtools_notification.4df10ae32f805993d431b3d4.js?d49c6c2f1edadd7f58fc443a53597c6a"></script><script type="text/javascript" src="js/cmodules/web/page_layout.74b6a1e8a066891ffa6a7daf.js?a79fa6f5402f462d974f"></script><script type="text/javascript" src="js/cmodules/bundles/40078178da81a2a294c33d2feddcc76c.bc8473a712e22f821a5d9127.js?93299476685236438c18"></script><script type="text/javascript" src="js/cmodules/bundles/2bddcf8eba73bbb0902e1b2f9d33962b.398943f516a729749eb0e2b9.js?a346646ed8db83f74021"></script><script type="text/javascript" src="js/cmodules/web/ui_common.c651bb427c7f566d4b0486cb.js?7d8603dda26eb5b7b3d6f0302b83c540"></script><script type="text/javascript" src="js/cmodules/bundles/f8a3b0b69a90b5305d627c89f0bd674e.0ddcf139530f9eca6bfb6e18.js?55d06b92f78d1803b139"></script><script type="text/javascript" src="js/cmodules/web/likes.e06fa24ccc77d308d77a4b1c.js?6c7adaa3514b1e8e2d88b756ef0dd6a2"></script><script type="text/javascript" src="js/cmodules/web/grip.4e3739b310753afb9593589c.js?77cc88636dab4d4ab43fe764d6c1db18"></script>
+
+</head>
+
+<body onresize="onBodyResize()" class="dev dev_main_page no_wrap_cont main">
+  <div id="system_msg" class="fixed"></div>
+  <div id="utils"></div>
+
+  <div id="layer_bg" class="fixed"></div><div id="layer_wrap" class="scroll_fix_wrap fixed layer_wrap"><div id="layer"></div></div>
+  <div id="box_layer_bg" class="fixed"></div><div id="box_layer_wrap" class="scroll_fix_wrap fixed"><div id="box_layer"><div id="box_loader"><div class="pr pr_baw pr_medium" id="box_loader_pr"><div class="pr_bt"></div><div class="pr_bt"></div><div class="pr_bt"></div></div><div class="back"></div></div></div></div>
+
+  <div id="stl_left"></div><div id="stl_side"></div>
+
+  <script type="text/javascript">window.domStarted && domStarted();</script>
+
+  <div class="scroll_fix_wrap _page_wrap" id="page_wrap"><div><div class="scroll_fix">
+  
+
+  <div id="page_header_cont" class="page_header_cont">
+    <div class="back"></div>
+    <div id="page_header_wrap" class="page_header_wrap">
+      <a class="top_back_link" href="#" id="top_back_link" onclick="if (nav.go(this, event, {back: true}) === false) { showBackLink(); return false; }"></a>
+      <div id="page_header" class="p_head1 p_head_l3" style="width: 960px">
+        <div class="content">
+          <div id="top_nav" class="head_nav">
+  <div class="head_nav_item fl_l"><a class="top_home_link fl_l CovidLogo" href="index.html" aria-label="Home" accesskey="1"  onmouseover="this.className.indexOf(&#39;bugtracker_logo&#39;) === -1 &amp;&amp; bodyNode.className.indexOf(&#39;WideScreenAppPage&#39;) === -1 &amp;&amp; showTooltip(this,
+{
+  text: &quot;&lt;div class=\&quot;CovidTooltip__logo\&quot;&gt;&lt;\/div&gt;&lt;div class=\&quot;CovidTooltip__title\&quot;&gt;Stay home&lt;\/div&gt;&lt;div class=\&quot;CovidTooltip__text\&quot;&gt;Wash your hands, maintain social distancing, stay at home if you can, and &lt;a href=\&quot;\/feed?section=stayhome\&quot; onclick=\&quot;return typeof window.statlogsValueEvent !== &amp;#39;undefined&amp;#39; &amp;amp;&amp;amp; window.statlogsValueEvent(&amp;#39;coronavirus_tooltip_click&amp;#39;, 1) || nav.go(this, event)\&quot;&gt;keep busy&lt;\/a&gt;.&lt;\/div&gt;&quot;,
+  className: &#39;CovidTooltip&#39;,
+  width: 356,
+  dir: &#39;top&#39;,
+  shift: [0, 0, 6],
+  hidedt: 60, showdt: 600,
+  hasover: true,
+  onShowStart: function() {window.statlogsValueEvent !== &#39;undefined&#39; &amp;&amp; window.statlogsValueEvent(&#39;coronavirus_tooltip_show&#39;, 1)}
+})"><div class="top_home_logo"></div><div class="CovidLogo__hashtag ">#stayhome</div></a></div>
+  <div class="head_nav_item fl_l"><div id="ts_wrap" class="ts_wrap" onmouseover="TopSearch.initFriendsList();">
+  <input name="disable-autofill" style="display: none;" />
+  <input type="text" onmousedown="event.cancelBubble = true;" ontouchstart="event.cancelBubble = true;" class="text ts_input" id="ts_input" autocomplete="off" name="disable-autofill" placeholder="Search" aria-label="Search" />
+</div></div>
+  <div class="head_nav_item fl_l head_nav_btns"><div id="top_audio_layer_place" class="top_audio_layer_place"></div></div>
+  <div class="head_nav_item fl_r"><a class="top_nav_link" href="#" id="top_switch_lang" style="display: none;" onclick="ajax.post('al_index.html', {act: 'change_lang', lang_id: 3, hash: '' }); return false;">
+  Switch to English
+</a><a class="top_nav_link" href="join.html" id="top_reg_link" style="" onclick="return !showBox('join-2.html', {act: 'box', from: nav.strLoc}, {}, event)">
+  sign up
+</a></div>
+  <div class="head_nav_item_player"></div>
+</div>
+<div id="ts_cont_wrap" class="ts_cont_wrap" ontouchstart="event.cancelBubble = true;" onmousedown="event.cancelBubble = true;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="page_layout" style="width: 960px;">
+    <div id="side_bar" class="side_bar fl_l  sticky_top_force" style="display: none">
+      <div id="side_bar_inner" class="side_bar_inner">
+        <div id="quick_login" class="quick_login">
+  <form method="POST" name="login" id="quick_login_form" action="https://login.vk.com/?act=login">
+    <input type="hidden" name="act" value="login" />
+    <input type="hidden" name="role" value="al_frame" />
+    <input type="hidden" name="expire" id="quick_expire_input" value="" />
+    <input type="hidden" name="recaptcha" id="quick_recaptcha" value="" />
+    <input type="hidden" name="captcha_sid" id="quick_captcha_sid" value="" />
+    <input type="hidden" name="captcha_key" id="quick_captcha_key" value="" />
+    <input type="hidden" name="_origin" value="index.html" />
+    <input type="hidden" name="ip_h" value="f3e524a9c338c1f2dd" />
+    <input type="hidden" name="lg_h" value="f22ec62a257a902045" />
+    <input type="hidden" name="ul" id="quick_login_ul" value="" />
+    <div class="label">Phone or email</div>
+    <div class="labeled"><input type="text" name="email" class="dark" id="quick_email" /></div>
+    <div class="label">Password</div>
+    <div class="labeled"><input type="password" name="pass" class="dark" id="quick_pass" onkeyup="toggle('quick_expire', !!this.value);toggle('quick_forgot', !this.value)" /></div>
+    <input type="submit" class="submit" />
+  </form>
+  <button class="quick_login_button flat_button button_wide" id="quick_login_button">Log in</button>
+  <button class="quick_reg_button flat_button button_wide" id="quick_reg_button" style="display: none" onclick="top.showBox('join-2.html', {act: 'box', from: nav.strLoc})">Sign up</button>
+  <div class="clear forgot"><div class="checkbox" id="quick_expire" onclick="checkbox(this);ge('quick_expire_input').value=isChecked(this)?1:'';">Don&#39;t remember me</div><a id="quick_forgot" class="quick_forgot" href="restore.html" target="_top">Forgot your password?</a></div>
+</div>
+      </div>
+    </div>
+
+    <div id="page_body" class="fl_r " style="width: 960px;">
+      
+      <div id="wrap_between"></div>
+      <div id="wrap3"><div id="dev_page_wrap3">
+  <div id="dev_top_nav_wrap">
+    <div id="dev_top_nav" class="clear_fix" style="width: 960px">
+      <div class="dev_home_wrap fl_l">
+        <a class="dev_home_link fl_l" href="dev.html">Developers</a>
+      </div>
+      <a id="dev_top_products" class="dev_top_link  fl_l" href="https://vk.com/dev/products">Products</a>
+      <a id="dev_top_manuals" class="dev_top_link  fl_l" href="https://vk.com/dev/manuals">Documentation</a>
+      <a id="dev_top_apps" class="dev_top_link  fl_l" href="https://vk.com/apps?act=manage">My Apps</a>
+      <a id="dev_top_help" class="dev_top_link  fl_l" href="https://vk.com/dev/help">Support</a>
+      
+      <div class="dev_top_input_wrap fl_r">
+        <input class="dev_top_input text" type="text" id="dev_top_input" autocomplete="off" placeholder="Search" onkeydown="return Dev.onSearchChange(this, event);" onblur="Dev.onSearchBlur()" onfocus="return Dev.onSearchChange(this, event);" />
+        <div id="dev_search_suggest">
+          <div id="dev_search_suggest_list">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="dev_page_wrap2" class="fl_r">
+    <div id="dev_page_wrap1">
+      <div id="dev_page_wrap">
+        <div class="dev_main_featured dev_main_featured_banners_wrap">
+  <div class="dev_main_featured_banners">
+    <div class="dev_main_featured_banners_anim_helper"><div class="dev_main_featured_banner"></div></div>
+    <div class="dev_main_featured_banners_bg"></div>
+    <div class="dev_main_featured_banners_buttons"></div>
+    <div class="dev_main_featured_banners_arrow dev_main_featured_banners_arrow_next" onclick="Dev.mainPageSliderNext()">
+      <div class="dev_main_featured_banners_arrow_icon"></div>
+    </div>
+    <div class="dev_main_featured_banners_arrow dev_main_featured_banners_arrow_prev" onclick="Dev.mainPageSliderPrev()">
+      <div class="dev_main_featured_banners_arrow_icon"></div>
+    </div>
+  </div>
+</div>
+<div class="dev_main_wrap">
+  <div class="dev_main_featured clear_fix">
+    <div class="dev_main_featured_products clear_fix">
+      <a href="https://vk.com/dev/callback_api" class="dev_main_featured_product">
+        <div class="dev_main_featured_product_icon dev_main_featured_product_icon_callback_api"></div>
+        <div class="dev_main_featured_product_title">Callback API </div>
+        <div class="dev_main_featured_product_description">Working with your community&#39;s events</div>
+      </a>
+      <a href="https://vk.com/dev/CommunityMessages" class="dev_main_featured_product">
+        <div class="dev_main_featured_product_icon dev_main_featured_product_icon_widget_community_messages"></div>
+        <div class="dev_main_featured_product_title">Community Messages Widget</div>
+        <div class="dev_main_featured_product_description">Widget for contacting clients via VK</div>
+      </a>
+      <a href="https://vk.com/dev/goods" class="dev_main_featured_product">
+        <div class="dev_main_featured_product_icon dev_main_featured_product_icon_market"></div>
+        <div class="dev_main_featured_product_title">Market </div>
+        <div class="dev_main_featured_product_description">API for a store in your community</div>
+      </a>
+      <a href="https://vk.com/dev/Login" class="dev_main_featured_product dev_main_featured_product_icon_widget_login">
+        <div class="dev_main_featured_product_icon dev_main_featured_product_icon_widget_login"></div>
+        <div class="dev_main_featured_product_title">Authorization<br>Widget</div>
+        <div class="dev_main_featured_product_description">Accessing your website via VK account</div>
+      </a>
+      <a href="https://vk.com/dev/Share" class="dev_main_featured_product">
+        <div class="dev_main_featured_product_icon dev_main_featured_product_icon_share">
+        </div>
+        <div class="dev_main_featured_product_title">Share<br>Links</div>
+        <div class="dev_main_featured_product_description">Widget for sharing content</div>
+      </a>
+    </div>
+    <div class="dev_main_featured_button_wrapper">
+      <a href="https://vk.com/dev/products"><button class="flat_button dev_main_featured_button">Show all</button></a>
+    </div>
+    <div class="dev_main_sep"></div>
+  </div>
+  <div class="dev_main_content clear_fix">
+    <div class="dev_main_content_header" role="heading">Start Working</div>
+    <div class="dev_main_content_body">
+      <div class="dev_main_platforms">
+        <div class="dev_main_platforms_list">
+          <a href="https://vk.com/dev/ios_how_to_start" class="dev_main_platform">
+            <div class="dev_main_platform_icon dev_main_platform_icon_ios"></div>
+            <div class="dev_main_platform_title">iOS</div>
+          </a>
+          <a href="https://vk.com/dev/android_how_to_start" class="dev_main_platform">
+            <div class="dev_main_platform_icon dev_main_platform_icon_android"></div>
+            <div class="dev_main_platform_title">Android</div>
+          </a>
+          <a href="https://vk.com/dev/wp_how_to_start" class="dev_main_platform">
+            <div class="dev_main_platform_icon dev_main_platform_icon_wp"></div>
+            <div class="dev_main_platform_title">Windows Phone</div>
+          </a>
+          <a href="https://vk.com/dev/vk_how_to_start" class="dev_main_platform">
+            <div class="dev_main_platform_icon dev_main_platform_icon_embedded"></div>
+            <div class="dev_main_platform_title">Embedded App</div>
+          </a>
+          <a href="https://vk.com/dev/web_how_to_start" class="dev_main_platform">
+            <div class="dev_main_platform_icon dev_main_platform_icon_web"></div>
+            <div class="dev_main_platform_title">Web</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="dev_main_sep"></div>
+    <div class="dev_main_content_header clear_fix" role="heading">
+      <div class="fl_l">Platform News</div>
+      <a class="dev_main_blog_post_title dev_main_blog_post_more fl_r" href="https://vk.com/dev/blog">All news</a>
+    </div>
+    <div class="dev_main_blog_posts clear_fix">
+  <div class="dev_main_blog_post fl_l">
+  <a href="https://vk.com/dev/blog/php-sdk-and-bots-longpoll"><div class="dev_main_blog_post_cover" style="background-image: url(https://sun9-11.userapi.com/c840320/v840320146/6a9be/crum3Gib28g.jpg);"></div></a>
+  <div class="dev_main_blog_post_title"><a href="https://vk.com/dev/blog/php-sdk-and-bots-longpoll">Bots Long Poll API and PHP SDK</a></div>
+  <div class="dev_main_blog_post_date">28 February 2018</div>
+</div><div class="dev_main_blog_post fl_l">
+  <a href="https://vk.com/dev/blog/stories-api"><div class="dev_main_blog_post_cover" style="background-image: url(https://sun9-53.userapi.com/c834100/v834100955/be2c9/ndrZq80OhZk.jpg);"></div></a>
+  <div class="dev_main_blog_post_title"><a href="https://vk.com/dev/blog/stories-api">Stories API</a></div>
+  <div class="dev_main_blog_post_date">20 February 2018</div>
+</div><div class="dev_main_blog_post fl_l">
+  <a href="https://vk.com/dev/blog/direct-games"><div class="dev_main_blog_post_cover" style="background-image: url(https://sun9-61.userapi.com/c638328/v638328449/559f6/KfeDfsLhbIA.jpg);"></div></a>
+  <div class="dev_main_blog_post_title"><a href="https://vk.com/dev/blog/direct-games">HTML5 Games on the VK Platform</a></div>
+  <div class="dev_main_blog_post_date">17 August 2017</div>
+</div>
+</div>
+    <div class="dev_main_content_breaker"></div>
+    <div class="dev_main_footer">
+      <div class="dev_main_footer">
+        <div class="dev_main_footer_section_list clear_fix">
+          <div class="dev_main_footer_section dev_main_footer_section_product fl_l">
+  <div class="dev_main_footer_section_title">Products</div>
+  <ul class="dev_main_footer_section_links">
+    <li class="dev_main_footer_section_link"><a href="https://vk.com/dev/games">Games</a></li><li class="dev_main_footer_section_link"><a href="https://vk.com/dev/widgets_for_sites">Website Widgets</a></li><li class="dev_main_footer_section_link"><a href="https://vk.com/dev/bizmessages">Community Messages</a></li><li class="dev_main_footer_section_link"><a href="https://vk.com/dev/callback_api">Callback API</a></li><li class="dev_main_footer_section_link"><a href="https://vk.com/dev/goods">Market</a></li>
+  </ul>
+</div><div class="dev_main_footer_section fl_l">
+  <div class="dev_main_footer_section_title">SDK</div>
+  <ul class="dev_main_footer_section_links">
+    <li class="dev_main_footer_section_link"><a href="https://vk.com/dev/ios_sdk">iOS SDK</a></li><li class="dev_main_footer_section_link"><a href="https://vk.com/dev/android_sdk">Android SDK</a></li><li class="dev_main_footer_section_link"><a href="https://vk.com/dev/Javascript_SDK">Javascript SDK</a></li><li class="dev_main_footer_section_link"><a href="https://vk.com/dev/Java_SDK">Java SDK</a></li><li class="dev_main_footer_section_link"><a href="https://vk.com/dev/PHP_SDK">PHP SDK</a></li>
+  </ul>
+</div><div class="dev_main_footer_section fl_l">
+  <div class="dev_main_footer_section_title">Documentation</div>
+  <ul class="dev_main_footer_section_links">
+    <li class="dev_main_footer_section_link"><a href="https://vk.com/dev/first_guide">Learning API</a></li><li class="dev_main_footer_section_link"><a href="https://vk.com/dev/versions">API versions</a></li><li class="dev_main_footer_section_link"><a href="https://vk.com/dev/methods">API Methods</a></li><li class="dev_main_footer_section_link"><a href="https://vk.com/dev/objects">Data Types</a></li>
+  </ul>
+</div><div class="dev_main_footer_section fl_l">
+  <div class="dev_main_footer_section_title">Support</div>
+  <ul class="dev_main_footer_section_links">
+    <li class="dev_main_footer_section_link"><a href="https://vk.com/dev/roadmap">Roadmap</a></li><li class="dev_main_footer_section_link"><a href="https://vk.com/dev/feedback">Feedback</a></li><li class="dev_main_footer_section_link"><a href="https://vk.com/dev/health">Platform Status</a></li><li class="dev_main_footer_section_link"><a href="https://vk.com/bugs">Bug Tracker</a></li><li class="dev_main_footer_section_link"><a href="https://vk.com/apiclub">Official Community</a></li>
+  </ul>
+</div>
+        </div>
+        <div class="dev_main_footer_rules clear_fix">
+          <ul class="dev_main_footer_rules_links fl_l">
+            <li class="dev_main_footer_rules_link"><a href="https://vk.com/dev/rules">Platform Rules</a></li>
+            <li class="dev_main_footer_rules_link"><a href="https://vk.com/dev/partnership">Partnership Model</a></li>
+          </ul>
+          <div class="dev_main_footer_lang fl_r">Language:<a class="footer_lang_link" onclick="ajax.post('al_index.html', {act: 'change_lang', lang_id: 3, hash: '425e1ee3248f21fd97'})">English</a><a class="footer_lang_link" onclick="ajax.post('al_index.html', {act: 'change_lang', lang_id: 0, hash: '425e1ee3248f21fd97'})">Русский</a><a class="footer_lang_link" onclick="ajax.post('al_index.html', {act: 'change_lang', lang_id: 1, hash: '425e1ee3248f21fd97'})">Українська</a><a class="footer_lang_link" onclick="if (vk.al) { showBox('lang.php', {act: 'lang_dialog', all: 1}, {params: {dark: true, bodyStyle: 'padding: 0px'}, noreload: true}); } else { changeLang(1); } return false;">all languages »</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+    
+  </div>
+</div></div>
+    </div>
+
+    <div id="footer_wrap" class="footer_wrap fl_r" style="width: 960px;"><div class="footer_nav" id="bottom_nav">
+  <div class="footer_copy"><a href="about.html">VK</a> &copy; 2006–2020</div>
+  <div class="footer_links">
+    <a class="bnav_a" href="about.html">About VK</a>
+    <a class="bnav_a" href="supporte04c.html?act=home" style="display: none;">Help</a>
+    <a class="bnav_a" href="terms.html">Terms</a>
+    <a class="bnav_a" href="https://vk.com/ads" style="display: none;">Ads</a>
+    
+    <a class="bnav_a" href="dev.html">Developers</a>
+    <a class="bnav_a" href="jobs.html" style="display: none;">Jobs</a>
+  </div>
+  <div class="footer_lang"><a class="footer_lang_link" onclick="ajax.post('al_index.html', {act: 'change_lang', lang_id: 3, hash: '425e1ee3248f21fd97'})">English</a><a class="footer_lang_link" onclick="ajax.post('al_index.html', {act: 'change_lang', lang_id: 0, hash: '425e1ee3248f21fd97'})">Русский</a><a class="footer_lang_link" onclick="ajax.post('al_index.html', {act: 'change_lang', lang_id: 1, hash: '425e1ee3248f21fd97'})">Українська</a><a class="footer_lang_link" onclick="if (vk.al) { showBox('lang.php', {act: 'lang_dialog', all: 1}, {params: {dark: true, bodyStyle: 'padding: 0px'}, noreload: true}); } else { changeLang(1); } return false;">all languages »</a></div>
+</div>
+
+<div class="footer_bench clear">
+  
+</div></div>
+
+    <div class="clear"></div>
+  </div>
+</div></div><noscript><div style="position:absolute;left:-10000px;">
+<img src="http://top-fwz1.mail.ru/counter?id=2579437;js=na" style="border:0;" height="1" width="1" />
+</div></noscript></div>
+  <div class="progress" id="global_prg"></div>
+
+  <script type="text/javascript">
+    if (parent && parent != window && (browser.msie || browser.opera || browser.mozilla || browser.chrome || browser.safari || browser.iphone)) {
+      document.getElementsByTagName('body')[0].innerHTML = '';
+    } else {
+      window.domReady && domReady();
+      updateMoney(0);
+initPageLayoutUI();
+if (browser.iphone || browser.ipad || browser.ipod) {
+  setStyle(bodyNode, {webkitTextSizeAdjust: 'none'});
+}var qf = ge('quick_login_form'), ql = ge('quick_login'), qe = ge('quick_email'), qp = ge('quick_pass');
+var qlb = ge('quick_login_button'), prgBtn = qlb;
+
+var qinit = function() {
+  setTimeout(function() {
+    ql.insertBefore(ce('div', {innerHTML: '<iframe class="upload_frame" id="quick_login_frame" name="quick_login_frame"></iframe>'}), qf);
+    qf.target = 'quick_login_frame';
+    qe.onclick = loginByCredential;
+    qp.onclick = loginByCredential;
+  }, 1);
+}
+
+if (window.top && window.top != window) {
+  window.onload = qinit;
+} else {
+  setTimeout(qinit, 0);
+}
+
+qf.onsubmit = function() {
+  if (!ge('quick_login_frame')) return false;
+  if (!val('quick_login_ul') && !trim(qe.value)) {
+    notaBene(qe);
+    return false;
+  } else if (!trim(qp.value)) {
+    notaBene(qp);
+    return false;
+  }
+  lockButton(window.__qfBtn = prgBtn);
+  prgBtn = qlb;
+  clearTimeout(__qlTimer);
+  __qlTimer = setTimeout(loginSubmitError, 30000);
+  domFC(domPS(qf)).onload = function() {
+    clearTimeout(__qlTimer);
+    __qlTimer = setTimeout(loginSubmitError, 2500);
+  }
+  return true;
+}
+
+window.loginSubmitError = function() {
+  showFastBox('Warning', 'Unable to complete encrypted authorization. This can happen if your date and time settings are not configured correctly on your system. Please check your date &amp; time settings and restart the browser.');
+}
+window.focusLoginInput = function() {
+  scrollToTop(0);
+  notaBene('quick_email');
+}
+window.changeQuickRegButton = function(noShow) {
+  if (noShow) {
+    hide('top_reg_link', 'quick_reg_button');
+  } else {
+    show('top_reg_link', 'quick_reg_button');
+  }
+  toggle('top_switch_lang', noShow && window.langConfig && window.langConfig.id != 3);
+}
+window.submitQuickLoginForm = function(email, pass, opts) {
+  setQuickLoginData(email, pass, opts);
+  if (opts && opts.prg) prgBtn = opts.prg;
+  if (qf.onsubmit()) qf.submit();
+}
+window.setQuickLoginData = function(email, pass, opts) {
+  if (email !== undefined) ge('quick_email').value = email;
+  if (pass !== undefined) ge('quick_pass').value = pass;
+  var params = opts && opts.params || {};
+  each (params, function(i, v) {
+    var el = ge('quick_' + i) || ge('quick_login_' + i);;
+    if (el) {
+      val(el, params[i]);
+    } else {
+      qf.appendChild(ce('input', {type: 'hidden', name: i, id: 'quick_login_' + i, value: v}));
+    }
+  });
+}
+window.loginByCredential = function() {
+  if (!browserFeatures.cmaEnabled || !window.submitQuickLoginForm || window._loginByCredOffered) return false;
+
+  _loginByCredOffered = true;
+  navigator.credentials.get({
+    password: true,
+    mediation: 'required'
+  }).then(function(cred) {
+    if (cred) {
+      submitQuickLoginForm(cred.id, cred.password);
+      return true;
+    } else {
+      return false;
+    }
+  });
+}
+
+if (qlb) {
+  qlb.onclick = function() { if (qf.onsubmit()) qf.submit(); };
+}
+
+if (browser.opera_mobile) show('quick_expire');
+
+if (1) {
+  hide('support_link_td', 'top_support_link');
+}
+var ts_input = ge('ts_input');
+if (ts_input) {
+  placeholderSetup(ts_input, {back: false, reload: true, phColor: '#8fadc8'});
+}
+TopSearch.init();;window.shortCurrency && shortCurrency();
+window.handlePageParams && handlePageParams({"id":0,"no_ads":1,"loc":"dev","noleftmenu":1,"plain":1,"wrap_page":1,"width":960,"width_dec":0,"width_dec_footer":0,"top_home_link_class":"top_home_link fl_l CovidLogo","body_class":"dev dev_main_page no_wrap_cont main","counters":"","pvbig":0,"pvdark":1});addEvent(document, 'click', onDocumentClick);
+addLangKeys({"global_apps":"Apps","global_friends":"Friends","global_communities":"Communities","head_search_results":"Search results","global_chats":"Chats","global_show_all_results":"Show all results","global_news_search_results":"Search results by news","global_emoji_cat_recent":"Frequently Used","global_emoji_cat_1":"Faces","global_emoji_cat_2":"Animals &amp; Nature","global_emoji_cat_3":"Hands &amp; People","global_emoji_cat_4":"Food &amp; Drink","global_emoji_cat_5":"Activity","global_emoji_cat_6":"Travel &amp; Transport","global_emoji_cat_7":"Objects","global_emoji_cat_8":"Symbols","global_emoji_cat_9":"Flags","stories_archive_privacy_info":"Only you can see your archived stories","stories_remove_warning":"Are you sure you want to delete this story?<br>This cannot be undone.","stories_narrative_remove_warning":"Are you sure you want to delete this narrative?<br>This cannot be undone.","stories_remove_confirm":"Delete","stories_answer_placeholder":"Your message…","stories_answer_sent":"Message sent","stories_blacklist_title":"Hidden from Stories","stories_settings":"Settings","stories_add_blacklist_title":"Hide from stories","stories_add_blacklist_message":"This user&#39;s stories won&#39;t appear in your feed, but you&#39;ll stay friends.","stories_add_blacklist_button":"Hide from stories","stories_add_blacklist_message_group":"This community&#39;s stories won&#39;t appear in your feed, but you&#39;ll still be a follower.","stories_remove_from_blacklist_button":"Show in stories","stories_error_cant_load":"Unable to load the story.","stories_try_again":"Try again","stories_error_expired":"&#8203;&#8203;The story could have been viewed<br>within 24 hours after being created","stories_error_deleted":"Story deleted","stories_error_private":"Story hidden by author","stories_error_one_time_seen":"This story is no longer available","stories_mask_tooltip":"Try this mask","stories_mask_sent":"Mask sent to phone","stories_followed":"Started following&#33;","stories_unfollowed":"You&#39;ve unfollowed","stories_is_ad":"Advertisment","stories_private_story":"Private<br>story","stories_expired_story":"Story<br>expired","stories_deleted_story":"Story<br>deleted","stories_bad_browser":"Stories are not supported by your browser","stories_delete_all_replies_confirm":"Are you sure you want to delete all of {name}&#39;s replies from last 24 hours?<br>This cannot be undone.","stories_hide_reply_button":"Hide reply","stories_reply_hidden":"Story reply hidden.","stories_restore":"Restore","stories_hide_reply_continue":"Return to replies","stories_hide_all_replies":["","Hide all of his replies from the last 24 hours","Hide all of her replies from the last 24 hours"],"stories_reply_add_to_blacklist":"Block","stories_hide_reply_warning":"Are you sure you want to hide this reply?<br>This cannot be undone.","stories_replies_more_button":["","Show %s more commenter","Show %s more commenters"],"stories_all_replies_hidden":"All replies hidden","stories_ban_confirm":"Are you sure you want to block {name}?<br>This cannot be undone.","stories_banned":"The user has been blocked","stories_share":"Share","stories_like":"Like","stories_follow":"Follow","stories_unfollow":"Unfollow","stories_report":"Report","stories_report_sent":"Report sent","stories_narrative_show":"View narrative","stories_narrative_bookmark_added":"Narrative added to {link}Bookmarks{\/link}","stories_narrative_bookmark_deleted":"Narrative removed from Bookmarks","stories_narrative_edit_button":"Edit narrative","stories_narrative_add_bookmark_button":"Add to Bookmarks","stories_narrative_remove_bookmark_button":"Remove from Bookmarks","stories_show_hashtag_link":"Search hashtag","stories_go_to_place":"Go to place","stories_go_to_group":"Open community","stories_go_to_profile":"Open profile","stories_go_to_post":"Go to post","stories_go_to_story":"Open story","stories_share_question":"Give feedback","stories_live_ended_title":"Thanks for watching&#33;","stories_live_ended_desc_club":"{name} finished <br>the live stream.","stories_live_ended_desc_user":["","{name} finished the live stream.","{name} finished the live stream."],"stories_live_ended_open_club":"Open community","stories_live_ended_open_user":"Open profile","stories_live_ended_watch_next":"Watch next","stories_live_N_watching":["","%s watching now","%s watching now"],"stories_live_chat_msg_too_long":"Message too long","stories_questions_title":"Feedback","stories_question_reply":"Respond","stories_question_reply_error":"Unfortunately, your message cannot be sent due to this user&#39;s privacy settings.","stories_question_reply_send":"Send","stories_question_reply_placeholder":"Write a message...","stories_question_delete":"Delete feedback","stories_question_author_ban":"Block","stories_question_author_unban":"Unblock author","stories_question_author_blocked":"Author blocked","stories_question_author_unblocked":"Author unblocked","stories_question_author_report":"Report","stories_question_report_title":"Report feedback","stories_question_report_send":"Send","stories_question_more":"More options","stories_question_sent":"You gave feedback to {name}","stories_question_reply_box_title":"Message to {name}","stories_question_ask_placeholder":"Enter your feedback...","stories_question_ask_box_title":"Feedback on {name}&#39;s story","stories_question_report_reason":"Select a reason","stories_question_forbidden":"You can&#39;t give feedback","stories_audio_add":"Add to my music","stories_audio_added":"Track added","stories_audio_delete":"Delete track","stories_audio_deleted":"Track deleted","stories_audio_next_audio":"Play next","stories_reactions_title":"Quick reactions","stories_reactions_tooltip_feature":"Now you can quickly react to the story","stories_go_to_market_item":"More info","stories_market_access_error_title":"Error","stories_market_access_error_text":"Product unavailable","stories_groups_feed_block":"Communities","stories_settings_box_tab_all":"All","stories_settings_box_tab_separately":"Shown separately","stories_settings_box_tab_grouped":"Grouped","stories_settings_box_search_placeholder":"Search communities","stories_settings_box_put_back":"Show last","stories_groups_grid_title":"Community stories","stories_go_to_app":"Go to mini app","stories_groups_grid_text":"This is where you can find stories from communities that you&#39;re following","stories_groups_tooltip":"Mark stories that you want to see in your stories feed","stories_settings_saved":"Settings saved","stories_question_select_public":"Publicly","stories_question_select_author_only":"Author only","stories_question_select_anonymous":"Anonymously","stories_question_about_user_tooltip":"<b>Public<\/b><br>{name} will be able to add your name when sharing your feedback.<br><br><b>Name visible to author<\/b><br>{name} will see your name but won&#39;t be able to add it when sharing your feedback.<br><br><b>Anonymous<\/b><br>{name} won&#39;t see your name and won&#39;t be able to add it when sharing your feedback.","stories_question_about_group_tooltip":"<b>Public<\/b><br>Community managers will be able to add your name when sharing your feedback.<br><b>Name visible to author<\/b><br>Community managers will see your name but won&#39;t be able to add it when sharing your feedback.<br><b>Anonymous<\/b><br>Community managers won&#39;t see your name and won&#39;t be able to add it when sharing your feedback.","stories_question_about_user_tooltip_without_anon":"<b>Public<\/b><br>{name} will be able to add your name when sharing your feedback.<br><br><b>Name visible to author<\/b><br>{name} will see your name but won&#39;t be able to add it when sharing your feedback.","stories_question_about_group_tooltip_without_anon":"<b>Public<\/b><br>Community managers will be able to add your name when sharing your feedback.<br><br><b>Name visible to author<\/b><br>Community managers will see your name but won&#39;t be able to add it when sharing your feedback."}, true);
+addLangKeys({"box_close":"Close","captcha_cancel":"Cancel","captcha_enter_code":"Enter the code from the picture","captcha_send":"Send","global_back":"Back","global_box_title_back":"Back","global_captcha_input_here":"Enter code","global_close":"Close","global_date":["","{day} {month} {year}","yesterday","today","tomorrow"],"global_hours_ago":["","%s hour ago","%s hours ago"],"global_just_now":"just now","global_mins_ago":["","%s minute ago","%s minutes ago"],"global_recaptcha_title":"Confirm action","global_short_date":["","{month} {day}","yesterday","today","tomorrow"],"global_short_date_time":["","{day} {month} at {hour}:{minute} {am_pm}","yesterday at {hour}:{minute} {am_pm}","today at {hour}:{minute} {am_pm}","tomorrow at {hour}:{minute} {am_pm}"],"global_short_date_time_l":["","{day} {month} at {hour}:{minute} {am_pm}","yesterday at {hour}:{minute} {am_pm}","today at {hour}:{minute} {am_pm}","tomorrow at {hour}:{minute} {am_pm}"],"global_to_top":"Go up","global_user_is_online":"online","global_user_is_online_mobile":"online from mobile","global_word_hours_ago":["","one hour ago","two hours ago","three hours ago","four hours ago","five hours ago"],"global_word_mins_ago":["","one minute ago","two minutes ago","three minutes ago","4 minutes ago","5 minutes ago"],"months_of":{"1":"January","2":"February","3":"March","4":"April","5":"May","6":"June","7":"July","8":"August","9":"September","10":"October","11":"November","12":"December"},"months_sm_of":{"1":"Jan","2":"Feb","3":"Mar","4":"Apr","5":"May","6":"Jun","7":"Jul","8":"Aug","9":"Sep","10":"Oct","11":"Nov","12":"Dec"},"global_error":"Error"});
+addTemplates({"_":"_","stickers_sticker_url":"https:\/\/vk.com\/sticker\/1-%id%-%size%"});
+window.cur = window.cur || {};
+cur['emojiHintsSendLogHash']="b88e373dd4e191f0ca";
+var sections = [];
+cur.sections = {"account":{"list":[["account.ban",""],["account.changePassword",""],["account.getActiveOffers",""],["account.getAppPermissions",""],["account.getBanned",""],["account.getCounters",""],["account.getInfo",""],["account.getProfileInfo",""],["account.getPushSettings",""],["account.registerDevice",""],["account.saveProfileInfo",""],["account.setInfo",""],["account.setNameInMenu",""],["account.setOffline",""],["account.setOnline",""],["account.setPushSettings",""],["account.setSilenceMode",""],["account.unban",""],["account.unregisterDevice",""]],"name":"Account"},"ads":{"list":[["ads.addOfficeUsers",""],["ads.checkLink",""],["ads.createAds",""],["ads.createCampaigns",""],["ads.createClients",""],["ads.createLookalikeRequest",""],["ads.createTargetGroup",""],["ads.createTargetPixel",""],["ads.deleteAds",""],["ads.deleteCampaigns",""],["ads.deleteClients",""],["ads.deleteTargetGroup",""],["ads.deleteTargetPixel",""],["ads.getAccounts",""],["ads.getAds",""],["ads.getAdsLayout",""],["ads.getAdsTargeting",""],["ads.getBudget",""],["ads.getCampaigns",""],["ads.getCategories",""],["ads.getClients",""],["ads.getDemographics",""],["ads.getFloodStats",""],["ads.getLookalikeRequests",""],["ads.getOfficeUsers",""],["ads.getPostsReach",""],["ads.getRejectionReason",""],["ads.getStatistics",""],["ads.getSuggestions",""],["ads.getTargetGroups",""],["ads.getTargetPixels",""],["ads.getTargetingStats",""],["ads.getUploadURL",""],["ads.getVideoUploadURL",""],["ads.importTargetContacts",""],["ads.removeOfficeUsers",""],["ads.removeTargetContacts",""],["ads.saveLookalikeRequestResult",""],["ads.shareTargetGroup",""],["ads.updateAds",""],["ads.updateCampaigns",""],["ads.updateClients",""],["ads.updateTargetGroup",""],["ads.updateTargetPixel",""]],"name":"Ads"},"appWidgets":{"list":[["appWidgets.getAppImageUploadServer",""],["appWidgets.getAppImages",""],["appWidgets.getGroupImageUploadServer",""],["appWidgets.getGroupImages",""],["appWidgets.getImagesById",""],["appWidgets.saveAppImage",""],["appWidgets.saveGroupImage",""],["appWidgets.update",""]],"name":"appWidgets"},"apps":{"list":[["apps.deleteAppRequests",""],["apps.get",""],["apps.getCatalog",""],["apps.getFriendsList",""],["apps.getLeaderboard",""],["apps.getScopes",""],["apps.getScore",""],["apps.promoHasActiveGift",""],["apps.promoUseGift",""],["apps.sendRequest",""]],"name":"Apps"},"audio":{"name":"Audio","class_name":"nodoc"},"auth":{"list":[["auth.checkPhone",""],["auth.restore",""]],"name":"Auth"},"board":{"list":[["board.addTopic",""],["board.closeTopic",""],["board.createComment",""],["board.deleteComment",""],["board.deleteTopic",""],["board.editComment",""],["board.editTopic",""],["board.fixTopic",""],["board.getComments",""],["board.getTopics",""],["board.openTopic",""],["board.restoreComment",""],["board.unfixTopic",""]],"name":"Board"},"database":{"list":[["database.getChairs",""],["database.getCities",""],["database.getCitiesById",""],["database.getCountries",""],["database.getCountriesById",""],["database.getFaculties",""],["database.getMetroStations",""],["database.getMetroStationsById",""],["database.getRegions",""],["database.getSchoolClasses",""],["database.getSchools",""],["database.getUniversities",""]],"name":"Database"},"docs":{"list":[["docs.add",""],["docs.delete",""],["docs.edit",""],["docs.get",""],["docs.getById",""],["docs.getMessagesUploadServer",""],["docs.getTypes",""],["docs.getUploadServer",""],["docs.getWallUploadServer",""],["docs.save",""],["docs.search",""]],"name":"Docs"},"execute":{"list":[["execute",""]],"name":"Execute"},"fave":{"list":[["fave.addArticle",""],["fave.addLink",""],["fave.addPage",""],["fave.addPost",""],["fave.addProduct",""],["fave.addTag",""],["fave.addVideo",""],["fave.editTag",""],["fave.get",""],["fave.getPages",""],["fave.getTags",""],["fave.markSeen",""],["fave.removeArticle",""],["fave.removeLink",""],["fave.removePage",""],["fave.removePost",""],["fave.removeProduct",""],["fave.removeTag",""],["fave.removeVideo",""],["fave.reorderTags",""],["fave.setPageTags",""],["fave.setTags",""],["fave.trackPageInteraction",""]],"name":"Fave"},"friends":{"list":[["friends.add",""],["friends.addList",""],["friends.areFriends",""],["friends.delete",""],["friends.deleteAllRequests",""],["friends.deleteList",""],["friends.edit",""],["friends.editList",""],["friends.get",""],["friends.getAppUsers",""],["friends.getByPhones",""],["friends.getLists",""],["friends.getMutual",""],["friends.getOnline",""],["friends.getRecent",""],["friends.getRequests",""],["friends.getSuggestions",""],["friends.search",""]],"name":"Friends"},"gifts":{"list":[["gifts.get",""]],"name":"Gifts"},"groups":{"list":[["groups.addAddress",""],["groups.addCallbackServer",""],["groups.addLink",""],["groups.approveRequest",""],["groups.ban",""],["groups.create",""],["groups.deleteAddress",""],["groups.deleteCallbackServer",""],["groups.deleteLink",""],["groups.disableOnline",""],["groups.edit",""],["groups.editAddress",""],["groups.editCallbackServer",""],["groups.editLink",""],["groups.editManager",""],["groups.enableOnline",""],["groups.get",""],["groups.getAddresses",""],["groups.getBanned",""],["groups.getById",""],["groups.getCallbackConfirmationCode",""],["groups.getCallbackServers",""],["groups.getCallbackSettings",""],["groups.getCatalog",""],["groups.getCatalogInfo",""],["groups.getInvitedUsers",""],["groups.getInvites",""],["groups.getLongPollServer",""],["groups.getLongPollSettings",""],["groups.getMembers",""],["groups.getOnlineStatus",""],["groups.getRequests",""],["groups.getSettings",""],["groups.getTokenPermissions",""],["groups.invite",""],["groups.isMember",""],["groups.join",""],["groups.leave",""],["groups.removeUser",""],["groups.reorderLink",""],["groups.search",""],["groups.setCallbackSettings",""],["groups.setLongPollSettings",""],["groups.setSettings",""],["groups.unban",""]],"name":"Groups"},"leadForms":{"list":[["leadForms.create",""],["leadForms.delete",""],["leadForms.get",""],["leadForms.getLeads",""],["leadForms.getUploadURL",""],["leadForms.list",""],["leadForms.update",""]],"name":"leadForms"},"leads":{"list":[["leads.checkUser",""],["leads.complete",""],["leads.getStats",""],["leads.getUsers",""],["leads.metricHit",""],["leads.start",""]],"name":"Leads"},"likes":{"list":[["likes.add",""],["likes.delete",""],["likes.getList",""],["likes.isLiked",""]],"name":"Likes"},"market":{"list":[["market.add",""],["market.addAlbum",""],["market.addToAlbum",""],["market.createComment",""],["market.delete",""],["market.deleteAlbum",""],["market.deleteComment",""],["market.edit",""],["market.editAlbum",""],["market.editComment",""],["market.get",""],["market.getAlbumById",""],["market.getAlbums",""],["market.getById",""],["market.getCategories",""],["market.getComments",""],["market.removeFromAlbum",""],["market.reorderAlbums",""],["market.reorderItems",""],["market.report",""],["market.reportComment",""],["market.restore",""],["market.restoreComment",""],["market.search",""]],"name":"Market"},"messages":{"list":[["messages.addChatUser",""],["messages.allowMessagesFromGroup",""],["messages.createChat",""],["messages.delete",""],["messages.deleteChatPhoto",""],["messages.deleteConversation",""],["messages.denyMessagesFromGroup",""],["messages.edit",""],["messages.editChat",""],["messages.getByConversationMessageId",""],["messages.getById",""],["messages.getChat",""],["messages.getChatPreview",""],["messages.getConversationMembers",""],["messages.getConversations",""],["messages.getConversationsById",""],["messages.getHistory",""],["messages.getHistoryAttachments",""],["messages.getImportantMessages",""],["messages.getInviteLink",""],["messages.getLastActivity",""],["messages.getLongPollHistory",""],["messages.getLongPollServer",""],["messages.isMessagesFromGroupAllowed",""],["messages.joinChatByInviteLink",""],["messages.markAsAnsweredConversation",""],["messages.markAsImportant",""],["messages.markAsImportantConversation",""],["messages.markAsRead",""],["messages.pin",""],["messages.removeChatUser",""],["messages.restore",""],["messages.search",""],["messages.searchConversations",""],["messages.send",""],["messages.setActivity",""],["messages.setChatPhoto",""],["messages.unpin",""]],"name":"Messages"},"newsfeed":{"list":[["newsfeed.addBan",""],["newsfeed.deleteBan",""],["newsfeed.deleteList",""],["newsfeed.get",""],["newsfeed.getBanned",""],["newsfeed.getComments",""],["newsfeed.getLists",""],["newsfeed.getMentions",""],["newsfeed.getRecommended",""],["newsfeed.getSuggestedSources",""],["newsfeed.ignoreItem",""],["newsfeed.saveList",""],["newsfeed.search",""],["newsfeed.unignoreItem",""],["newsfeed.unsubscribe",""]],"name":"News feed"},"notes":{"list":[["notes.add",""],["notes.createComment",""],["notes.delete",""],["notes.deleteComment",""],["notes.edit",""],["notes.editComment",""],["notes.get",""],["notes.getById",""],["notes.getComments",""],["notes.restoreComment",""]],"name":"Notes"},"notifications":{"list":[["notifications.get",""],["notifications.markAsViewed",""],["notifications.sendMessage",""]],"name":"Notifications"},"orders":{"list":[["orders.cancelSubscription",""],["orders.changeState",""],["orders.get",""],["orders.getAmount",""],["orders.getById",""],["orders.getUserSubscriptionById",""],["orders.getUserSubscriptions",""],["orders.updateSubscription",""]],"name":"Orders"},"pages":{"list":[["pages.clearCache",""],["pages.get",""],["pages.getHistory",""],["pages.getTitles",""],["pages.getVersion",""],["pages.parseWiki",""],["pages.save",""],["pages.saveAccess",""]],"name":"Pages"},"photos":{"list":[["photos.confirmTag",""],["photos.copy",""],["photos.createAlbum",""],["photos.createComment",""],["photos.delete",""],["photos.deleteAlbum",""],["photos.deleteComment",""],["photos.edit",""],["photos.editAlbum",""],["photos.editComment",""],["photos.get",""],["photos.getAlbums",""],["photos.getAlbumsCount",""],["photos.getAll",""],["photos.getAllComments",""],["photos.getById",""],["photos.getChatUploadServer",""],["photos.getComments",""],["photos.getMarketAlbumUploadServer",""],["photos.getMarketUploadServer",""],["photos.getMessagesUploadServer",""],["photos.getNewTags",""],["photos.getOwnerCoverPhotoUploadServer",""],["photos.getOwnerPhotoUploadServer",""],["photos.getTags",""],["photos.getUploadServer",""],["photos.getUserPhotos",""],["photos.getWallUploadServer",""],["photos.makeCover",""],["photos.move",""],["photos.putTag",""],["photos.removeTag",""],["photos.reorderAlbums",""],["photos.reorderPhotos",""],["photos.report",""],["photos.reportComment",""],["photos.restore",""],["photos.restoreComment",""],["photos.save",""],["photos.saveMarketAlbumPhoto",""],["photos.saveMarketPhoto",""],["photos.saveMessagesPhoto",""],["photos.saveOwnerCoverPhoto",""],["photos.saveOwnerPhoto",""],["photos.saveWallPhoto",""],["photos.search",""]],"name":"Photos"},"podcasts":{"list":[["podcasts.clearRecentSearches",""],["podcasts.getPopular",""],["podcasts.getRecentSearchRequests",""],["podcasts.search",""]],"name":"podcasts"},"polls":{"list":[["polls.addVote",""],["polls.create",""],["polls.deleteVote",""],["polls.edit",""],["polls.getBackgrounds",""],["polls.getById",""],["polls.getPhotoUploadServer",""],["polls.getVoters",""],["polls.savePhoto",""]],"name":"Polls"},"prettyCards":{"list":[["prettyCards.create",""],["prettyCards.delete",""],["prettyCards.edit",""],["prettyCards.get",""],["prettyCards.getById",""],["prettyCards.getUploadURL",""]],"name":"prettyCards"},"search":{"list":[["search.getHints",""]],"name":"Search"},"secure":{"list":[["secure.addAppEvent",""],["secure.checkToken",""],["secure.getAppBalance",""],["secure.getSMSHistory",""],["secure.getTransactionsHistory",""],["secure.getUserLevel",""],["secure.giveEventSticker",""],["secure.sendNotification",""],["secure.sendSMSNotification",""],["secure.setCounter",""]],"name":"Secure"},"stats":{"list":[["stats.get",""],["stats.getPostReach",""],["stats.trackVisitor",""]],"name":"Stats"},"status":{"list":[["status.get",""],["status.set",""]],"name":"Status"},"storage":{"list":[["storage.get",""],["storage.getKeys",""],["storage.set",""]],"name":"Storage"},"stories":{"list":[["stories.banOwner",""],["stories.delete",""],["stories.get",""],["stories.getBanned",""],["stories.getById",""],["stories.getPhotoUploadServer",""],["stories.getReplies",""],["stories.getStats",""],["stories.getVideoUploadServer",""],["stories.getViewers",""],["stories.hideAllReplies",""],["stories.hideReply",""],["stories.search",""],["stories.sendInteraction",""],["stories.unbanOwner",""]],"name":"stories"},"streaming":{"list":[["streaming.getServerUrl",""],["streaming.getSettings",""],["streaming.getStats",""],["streaming.getStem",""],["streaming.setSettings",""]],"name":"streaming"},"users":{"list":[["users.get",""],["users.getFollowers",""],["users.getSubscriptions",""],["users.report",""],["users.search",""]],"name":"Users"},"utils":{"list":[["utils.checkLink",""],["utils.deleteFromLastShortened",""],["utils.getLastShortenedLinks",""],["utils.getLinkStats",""],["utils.getServerTime",""],["utils.getShortLink",""],["utils.resolveScreenName",""]],"name":"Utils"},"video":{"list":[["video.add",""],["video.addAlbum",""],["video.addToAlbum",""],["video.createComment",""],["video.delete",""],["video.deleteAlbum",""],["video.deleteComment",""],["video.edit",""],["video.editAlbum",""],["video.editComment",""],["video.get",""],["video.getAlbumById",""],["video.getAlbums",""],["video.getAlbumsByVideo",""],["video.getComments",""],["video.removeFromAlbum",""],["video.reorderAlbums",""],["video.reorderVideos",""],["video.report",""],["video.reportComment",""],["video.restore",""],["video.restoreComment",""],["video.save",""],["video.search",""]],"name":"Video"},"wall":{"list":[["wall.checkCopyrightLink",""],["wall.closeComments",""],["wall.createComment",""],["wall.delete",""],["wall.deleteComment",""],["wall.edit",""],["wall.editAdsStealth",""],["wall.editComment",""],["wall.get",""],["wall.getById",""],["wall.getComment",""],["wall.getComments",""],["wall.getReposts",""],["wall.openComments",""],["wall.pin",""],["wall.post",""],["wall.postAdsStealth",""],["wall.reportComment",""],["wall.reportPost",""],["wall.repost",""],["wall.restore",""],["wall.restoreComment",""],["wall.search",""],["wall.unpin",""]],"name":"Wall"},"widgets":{"list":[["widgets.getComments",""],["widgets.getPages",""]],"name":"Widgets"}};
+cur.sect = 'users';
+var methodNum = 1;
+for (var i in cur.sections) {
+  var row = cur.sections[i];
+  sections.push({i: i, l: row.name, c: row.class_name});
+}
+cur.initEdit = function(cont, plain) {
+  cont = 'dev_edit_'+cont;
+  var objCont = ge(cont);
+  if (!objCont) {
+    return;
+  }
+  var editor = new WkEditor(objCont, {
+    buttons: {
+      bold: [0, 0, 'Bold'],
+      italic: [0, -20, 'Italic'],
+      left: [0, -80, 'Align left'],
+      center: [0, -100, 'Align center'],
+      right: [0, -120, 'Align right'],
+      list: [0, -140, 'Bulleted list', 'List item'],
+      h1: [0, -180, 'Add heading', 'Enter heading text'],
+      h2: [0, -200, 'Add subheading', 'Enter heading text'],
+      h3: [0, -220, 'Add subheading second level', 'Enter heading text'],
+      blockquote: [0, -360, 'Add quote', 'Quoted text'],
+      url: [0, -300, 'Add link', 'Delete link'],
+      image: [0, -240, 'Add photo'],
+      video: [0, -260, 'Add video'],
+      audio: [0, -280, 'Add audio']
+    },
+    plain: plain,
+    wikiPref: '',
+    source: ge(cont+'_textarea'),
+    panelCont: ge(cont+'_buttons_cont'),
+    help: ['Wiki markup help'],
+    mode: [0, -340, 'Wiki markup mode', 'Visual editing mode'],
+    lang: {
+      too_long: 'This page is too long to be saved.'
+    },
+    onPlainToggle: function(on, btn) {
+      if (btn) {
+        ajax.post('https://vk.com/al_pages.php', {act: 'toggle_plain', state: on ? 1 : 0}, {})
+      }
+      if (on) {
+        show('wk_wiki_help');
+      } else {
+        hide('wk_wiki_help');
+      }
+    }
+  });
+  cur.editors.push(editor);
+}
+
+if (ge('dev_section_menu')) {
+  cur.methodsDD = new DropdownMenu(sections, {
+    target: ge('dev_section_menu'),
+    width: 190,
+    showHover: false,
+    offsetTop: -3,
+    containerClass: 'dev_section_dd',
+    updateTarget: false,
+    align: 'right',
+    onSelect: function(obj) {
+      var sect = cur.methodsDD.val();
+      Dev.switchSection(sect, true);
+    },
+    onShow: function() {
+      var rows = cur.methodsDD.rows;
+      if (rows) {
+        var rowsWrap = domPN(rows), rowsH = getSize(rows)[1],
+            rowsWrapH = Math.min(rowsH, Math.max(200, window.lastWindowHeight + scrollGetY() - getXY(rows)[1] - 2));
+        setStyle(rowsWrap, {height: rowsWrapH, overflowY: (rowsWrapH < rowsH ? 'scroll' : 'auto')});
+        rows.scrollTop = 0;
+      }
+      if (!isVisible('box_layer_wrap')) {
+        addClass(bodyNode, 'hat_on_top');
+      }
+    },
+    onHide: function() {
+      removeClass(bodyNode, 'hat_on_top');
+    }
+  });
+}Dev.init({"edit":false,"page":null,"type":"main","editHash":"23607c3f906d75d39b","editors":[],"main_slider_items":[{"title":"VK Mini Apps","caption":"Everything you need is right here","className":"vkapps","link":"\/dev\/services"},{"title":"Community Widgets","caption":"Bring services closer to users","className":"community_widgets","link":"\/dev\/community_apps"},{"title":"Community Messages","caption":"Be in touch with your clients","className":"community_messages","link":"\/dev\/bizmessages"}],"lang":{"developers_group_access_method_tip":"This method can be called with a community token."}});
+;(function (d, w) {
+if (w.__dev) {
+  return
+}
+var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true;
+ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window);
+      window.curReady && window.curReady();
+    }
+  </script>
+</body>
+
+
+<!-- Mirrored from vk.com/dev by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Apr 2020 13:57:12 GMT -->
+</html>

@@ -1,0 +1,4 @@
+127.0.0.1 - - [25/Mar/2020:08:53:25 -0400] "GET / HTTP/1.1" 404 - http-bio-8080-exec-1 0
+127.0.0.1 - - [25/Mar/2020:08:53:29 -0400] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-2 0
+127.0.0.1 - - [25/Mar/2020:08:54:02 -0400] "GET /phishex_war HTTP/1.1" 404 - http-bio-8080-exec-3 0
+127.0.0.1 - - [25/Mar/2020:08:57:52 -0400] "GET /phishex HTTP/1.1" 404 - http-bio-8080-exec-5 0
