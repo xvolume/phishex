@@ -8,9 +8,9 @@ Httrack<br>
 Apache TOMCAT 9.*<br>
 
 Postgresql database:<br>
-Database name: phishex<br>
-user: phx<br>
-password: phishex_666<br>
+	database name: phishex<br>
+	user: phx<br>
+	password: phishex_666<br>
 	
 	Scripts:
 
