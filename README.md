@@ -31,7 +31,7 @@ password: phishex_666<br>
 	timezone varchar(64));
 </p>
 <br>
-<b>START<b><br>
+<b>START</b><br>
 <p>
 1) Run server.py script
 2) Run application
