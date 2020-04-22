@@ -26,12 +26,6 @@ public class DashboardServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
-//            DataWriter writer = new DataWriter();
-//            DataReader reader = new DataReader();
-//            writer.start();
-//            reader.start();
-
-            // Data writer
 
             File file = new File("grabbed_data.txt");
 

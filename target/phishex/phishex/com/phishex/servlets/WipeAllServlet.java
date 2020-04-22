@@ -25,11 +25,13 @@ public class WipeAllServlet extends HttpServlet {
             List<Credentials> credentials = credentialsDao.findAll();
             List<SysInfo> sysInfo = sysInfoDao.findAll();
 
-            for(Credentials creds: credentials){
-                credentialsDao.delete(creds);
-            }
-            for(SysInfo si: sysInfo){
-                sysInfoDao.delete(si);
+            if(!credentials.isEmpty() && !sysInfo.isEmpty()) {
+                for (Credentials creds : credentials) {
+                    credentialsDao.delete(creds);
+                }
+                for (SysInfo si : sysInfo) {
+                    sysInfoDao.delete(si);
+                }
             }
 
             // Check
@@ -37,10 +39,7 @@ public class WipeAllServlet extends HttpServlet {
             List<SysInfo> siCheck = sysInfoDao.findAll();
 
             if(credCheck.isEmpty() && siCheck.isEmpty()){
-                resp.setContentType("text/html");
-                req.setAttribute("credsError", "No data");
-                req.setAttribute("sysInfoError", "No data");
-                req.getRequestDispatcher("/WEB-INF/jsp/dashboard.jsp").forward(req, resp);
+                resp.sendRedirect("/dashboard");
             }
 
         }catch (Exception e){

@@ -19,36 +19,32 @@ public class SubmitChangesServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        try {
-            String[] id = req.getParameterValues("id");
-            String[] site = req.getParameterValues("site");
-            String[] data = req.getParameterValues("data");
 
-            CredentialsDao credentialsDao = new CredentialsDao();
+        String[] id = req.getParameterValues("id");
+        String[] site = req.getParameterValues("site");
+        String[] data = req.getParameterValues("data");
 
-            if (data.length != 0 && id.length != 0) {
-                for (int i = 0; i < id.length - 1; ) {
-                    Credentials creds = new Credentials();
+        CredentialsDao credentialsDao = new CredentialsDao();
 
-                    creds.setId(Integer.parseInt(id[i]));
-                    creds.setSite(site[i]);
-                    creds.setData(data[i]);
-                    if (!site[i].isEmpty() && !data[i].isEmpty()) {
-                        credentialsDao.update(creds);
-                    } else {
-                        emptyFieldError(req, resp);
-                    }
-                    i++;
+        if(data.length!=0 && id.length!=0){
+            for(int i = 0; i < id.length-1;){
+                Credentials creds = new Credentials();
+
+                creds.setId(Integer.parseInt(id[i]));
+                creds.setSite(site[i]);
+                creds.setData(data[i]);
+                if(!site[i].isEmpty() && !data[i].isEmpty()) {
+                    credentialsDao.update(creds);
+                }else{
+                    emptyFieldError(req, resp);
                 }
-            } else {
-                emptyFieldError(req, resp);
+                i++;
             }
-            resp.sendRedirect("/dashboard");
-        }catch (Exception e){
-            resp.setContentType("text/html");
-            req.setAttribute("error", e.getMessage());
-            req.getRequestDispatcher("/WEB-INF/jsp/edit.jsp").forward(req, resp);
         }
+        else{
+            emptyFieldError(req, resp);
+        }
+        resp.sendRedirect("/dashboard");
     }
 
     public void emptyFieldError(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

