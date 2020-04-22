@@ -8,9 +8,11 @@ Httrack<br>
 Apache TOMCAT 9.*<br>
 
 Postgresql database:<br>
-Database name: phishex<br>
-user: phx<br>
-password: phishex_666<br>
+	<p>
+	database name: phishex<br>
+	user: phx<br>
+	password: phishex_666<br>
+	</p>
 	
 	Scripts:
 
@@ -31,7 +33,7 @@ password: phishex_666<br>
 	timezone varchar(64));
 </p>
 <br>
-<b>START</b><br>
+<b>START</b><br><br>
 <p>
 1) Run server.py script<br>
 2) Run application<br>
